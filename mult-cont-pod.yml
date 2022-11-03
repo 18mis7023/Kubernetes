@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mcp
+spec:
+  containers:
+  - name: nginx-hemanth
+    image: nginx
+    ports:
+      - containerPort: 8080
+  - name: watcher-hemanth
+    image: afakharany/watcher:latest
+    ports:
+      - containerPort: 8080
