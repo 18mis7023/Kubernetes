@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: challenge-pod
+spec:
+  containers:
+  - name: k8sdemo-pod
+    image: arjunachari12/k8s-demo
+    ports:
+      - containerPort: 3000
